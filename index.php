@@ -1,8 +1,8 @@
 <?php
 
-	includ 'inc.twig.php';
+	include'inc.twig.php';
 
-	$template_index = $twig->loadTemplate('index.tpl')
+	$template_index = $twig->loadTemplate('index.tpl');
 
 	$n_jours_previsions = 3;
 
@@ -30,7 +30,7 @@
 
 	echo $template_index->render(array(
 		'_journees_meteo'	=> $_journees_meteo,
-		'_ville'			= $_ville,
+		'_ville'			=> $_ville,
 		'n_jours_previsions'=> $n_jours_previsions
 	));
 
@@ -41,16 +41,18 @@
 
 		$_icones_meteo =array(
 '01d' => 'entypo-light-up',
-'02d' => 'entypo-light-up','03d' => 'entypo-cloud'
+'02d' => 'entypo-light-up','03d' => 'entypo-cloud',
 '04d' => 'entypo-cloud','09d' => 'entypo-water', 
 '10d' => 'entypo-water',
 '11d' => 'entypo-flash',
 '13d' => 'entypo-star', 
 '50d' => 'entypo-air');
 
-		if(array_key_exists($code, $_icones_meteo))
+		if(array_key_exists($code, $_icones_meteo)){
 			return $_icones_meteo[$code];
 		}else{
 			return 'entypo-help';
 		}
 	}
+
+?>

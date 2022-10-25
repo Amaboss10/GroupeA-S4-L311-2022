@@ -1,12 +1,12 @@
 body.isok .preloader {
-    display: none;
+  display: none;
 }
 
 .preloader {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   bottom: 0;
   margin: auto;
   height: 0;
@@ -58,35 +58,35 @@ body.isok .preloader {
 }
 
 .preloader-top-sun-line-0 {
-  transform: rotate(0deg) translateX(-350%)
+  transform: rotate(0deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-45 {
-  transform: rotate(45deg) translateX(-350%)
+  transform: rotate(45deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-90 {
-  transform: rotate(90deg) translateX(-350%)
+  transform: rotate(90deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-135 {
-  transform: rotate(135deg) translateX(-350%)
+  transform: rotate(135deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-180 {
-  transform: rotate(180deg) translateX(-350%)
+  transform: rotate(180deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-225 {
-  transform: rotate(225deg) translateX(-350%)
+  transform: rotate(225deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-270 {
-  transform: rotate(270deg) translateX(-350%)
+  transform: rotate(270deg) translateX(-350%);
 }
 
 .preloader-top-sun-line-315 {
-  transform: rotate(315deg) translateX(-350%)
+  transform: rotate(315deg) translateX(-350%);
 }
 
 .preloader-bottom {
@@ -108,27 +108,27 @@ body.isok .preloader {
 
 .preloader-bottom-line-lg {
   width: 100%;
-  top: 0%
+  top: 0%;
 }
 
 .preloader-bottom-line-md {
   width: 75%;
-  top: 25%
+  top: 25%;
 }
 
 .preloader-bottom-line-sm {
   width: 50%;
-  top: 50%
+  top: 50%;
 }
 
 .preloader-bottom-line-xs {
   width: 25%;
-  top: 75%
+  top: 75%;
 }
 
 @keyframes preloader {
   0% {
-    transform: translateY(200%) rotate(0deg)
+    transform: translateY(200%) rotate(0deg);
   }
   25% {
     transform: translateY(0) rotate(0deg);
@@ -136,6 +136,6 @@ body.isok .preloader {
   }
   100% {
     transform: translateY(200%) rotate(-180deg);
-    transition-timing-function: ease-in; 
+    transition-timing-function: ease-in;
   }
 }
