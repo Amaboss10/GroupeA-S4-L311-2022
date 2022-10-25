@@ -1,0 +1,16 @@
+dans index.php : 
+error syntaxique : e à include'inc.twig.php';
+		   ; à la fin de la déclaration de $template_index;
+		   , à la fin de la declaration de '03d'
+		   > à ajouter à = pour affecté '_ville'
+		   { à la fin de la ligne de la condition if 
+
+syntaxe php : ?> à rajouter à la fin
+
+dans inc.twig.php : ?> à rajouter à la fin
+		     e à nw de la declaration de $twig
+
+dans import.css : s aux http 
+
+dans script.js : rajout en debut de ligne de wimdow.addEventListener("DOMContentLoaded",(event) => {});
+ 
