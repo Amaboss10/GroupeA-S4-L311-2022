@@ -1,4 +1,5 @@
 {{ include('top.tpl') }}
+
 <div class="preloader">
 	<div class="preloader-top">
 		<div class="preloader-top-sun">
@@ -27,12 +28,12 @@
 
 	<section class="contenu">
 	    <h1>
-	    	{{_ville|capitalize}}, {{_ville.country|upper}} 
+	    	{{_ville.name|capitalize}}, {{_ville.country|upper}} 
 	    	<a href="http://maps.google.com/maps?q={{_ville.coord.lat}},{{_ville.coord.lon}}" class="lk" target="_blank" title="Voir sur une carte">
 	    		Voir sur une carte
 	    	</a>
 	    </h1>
-	    {% for journee in _journees_meteo 
+	    {% for journee in _journees_meteo %}
 	    	<div class="jour">
 	    		<div class="numero_jour">
 	    			<h2>Météo du {{journee.dt|date('d/m/Y')}}</h2>
@@ -67,4 +68,4 @@
 
 	</section>
 </div>
-{{ incle('bottom.tpl') }}
+{{ include('bottom.tpl') }}

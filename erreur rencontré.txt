@@ -1,4 +1,5 @@
-dans index.php : 
+dans index.php :
+- ligne 23: list sans E
 error syntaxique : e à include'inc.twig.php';
 		   ; à la fin de la déclaration de $template_index;
 		   , à la fin de la declaration de '03d'
@@ -12,5 +13,15 @@ dans inc.twig.php : ?> à rajouter à la fin
 
 dans import.css : s aux http 
 
-dans script.js : rajout en debut de ligne de wimdow.addEventListener("DOMContentLoaded",(event) => {});
+dans script.js : rajout en debut de ligne de window.addEventListener("DOMContentLoaded",(event) => {});
  
+
+dans index.tpl :
+- ligne 35 %}
+- incle -> include (ligne 70)
+- _ville.name ligne 30
+
+dans bottom.tpl :
+- ligne 1: https:
+
+(Deprecated: preg_match(): Passing null to parameter #4 ($flags) of type int is deprecated in D:\Laragon\www\GroupeA-S4-L311-2022\lib\Twig\Lexer.php on line 232) 
