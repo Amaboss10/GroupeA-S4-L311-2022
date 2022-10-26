@@ -29,7 +29,7 @@
 
 	//~ $_ville correspond aux ville de $_data_array
 	$_ville = $_data_array['city'];
-	//~ $_journees_meteo correspond aux 
+	//~ $_journees_meteo correspond aux journées avec toutes les informations
 	$_journees_meteo = $_data_array['list'];
 
 	//~ Change le code des types 
@@ -46,7 +46,7 @@
 		'n_jours_previsions'=> $n_jours_previsions
 	));
 
-	//~ La fonction getMeteoImage($code) retourne un tableau dans le cas 
+	//~ La fonction getMeteoImage($code) prend en paramètre le code contenu dans le JSON, et donne la bonne classe CSS correspondante pour l'icône
 	function getMeteoImage($code){
 		if(strpos($code, 'n'))
 			return 'entypo-moon';
